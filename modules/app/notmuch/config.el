@@ -42,10 +42,6 @@
   (add-hook 'notmuch-tree-mode-hook (lambda () (setq-local line-spacing nil)))
   (remove-hook 'message-mode-hook #'turn-on-auto-fill)
   (remove-hook 'notmuch-message-mode-hook #'turn-on-auto-fill)
-  (push 'notmuch-tree-mode evil-snipe-disabled-modes)
-  (push 'notmuch-hello-mode evil-snipe-disabled-modes)
-  (push 'notmuch-search-mode evil-snipe-disabled-modes)
-  (push 'notmuch-show-mode evil-snipe-disabled-modes)
 
   (map!
          (:map notmuch-show-mode-map
@@ -193,3 +189,9 @@
 (def-package! org-mime
   :after (org notmuch)
   :config (setq org-mime-library 'mml))
+
+(after! evil-snipe
+  (push 'notmuch-tree-mode evil-snipe-disabled-modes)
+  (push 'notmuch-hello-mode evil-snipe-disabled-modes)
+  (push 'notmuch-search-mode evil-snipe-disabled-modes)
+  (push 'notmuch-show-mode evil-snipe-disabled-modes))
