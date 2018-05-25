@@ -55,7 +55,7 @@
           :nmv "q"     #'notmuch-bury-or-kill-this-buffer
           :nmv "s"     #'counsel-notmuch
           :nmv "t"     #'notmuch-tree-from-show-current-query
-          :nmv "s-n"   #'notmuch-mua-new-mail
+          :nmv "m"     #'notmuch-mua-new-mail
           :nmv "n"     #'notmuch-show-next-thread-show
           :nmv "v"     #'notmuch-show-view-raw-message
           :nmv "r"     #'notmuch-show-reply
@@ -70,7 +70,7 @@
           :nmv "t"   #'notmuch-tree
           :nmv "k"   #'widget-backward
           :nmv "n"   #'notmuch-mua-new-mail
-          :nmv "s-n" #'notmuch-mua-new-mail
+          :nmv "m"   #'notmuch-mua-new-mail
           :nmv "j"   #'widget-forward
           :nmv "s"   #'counsel-notmuch
           :nmv "q"   #'+mail/quit
@@ -84,7 +84,7 @@
           :nmv "k"   #'notmuch-search-previous-thread
           :nmv "t"   #'notmuch-tree-from-search-thread
           :nmv "RET" #'notmuch-search-show-thread
-          :nmv "s-n" #'notmuch-mua-new-mail
+          :nmv "m"   #'notmuch-mua-new-mail
           :nmv "T"   #'notmuch-tree-from-search-current-query
           :nmv ";"   #'notmuch-search-tag
           :nmv "d"   #'notmuch-search-delete-thread
@@ -106,7 +106,7 @@
           :nmv ";"   #'notmuch-tree-tag
           :nmv "RET" #'notmuch-tree-show-message
           :nmv "q"   #'notmuch-tree-quit
-          :nmv "s-n" #'notmuch-mua-new-mail
+          :nmv "m"   #'notmuch-mua-new-mail
           :nmv "r"   #'notmuch-search-reply-to-thread-sender
           :nmv "a"   #'notmuch-tree-archive-message-then-next
           :nmv "A"   #'notmuch-tree-archive-thread
